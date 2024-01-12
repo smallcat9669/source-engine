@@ -46,8 +46,8 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v3.1.3
       with:
-          name: Home
-          path: dist
+          name: Build Version
+          path: build
 
   build-windows-amd64:
     runs-on: windows-2019
