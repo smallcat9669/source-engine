@@ -24,6 +24,8 @@ jobs:
   build-android-armv7a:
     runs-on: ubuntu-20.04
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
     steps:
     - uses: actions/checkout@v2
     - name: Build android-armv7a
