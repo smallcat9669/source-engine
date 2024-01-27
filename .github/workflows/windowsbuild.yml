@@ -11,7 +11,7 @@ jobs:
     - name: Build windows-i386
       run: |
         git submodule init && git submodule update
-        ./waf.bat configure -T release --32bits
+        ./waf.bat configure -T release
         ./waf.bat build
 
     - name: Upload artifacts
